@@ -1,19 +1,17 @@
 package com.ssmbase.basesic.service;
 
-import com.ssmbase.basesic.dao.UserDto;
+import com.ssmbase.basesic.dao.UserMapper;
 import com.ssmbase.basesic.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class UserService {
 
     @Autowired
-    UserDto userDao;
-    public List<User> selectUsers(){
-        List<User> list = userDao.getUser();
+    UserMapper userDao;
+    public User selectUsers(){
+        User list = userDao.selectByPrimaryKey(1);
         return list;
     }
 

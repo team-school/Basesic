@@ -1,6 +1,7 @@
 package com.ssmbase.basesic.controller;
 
 
+import com.ssmbase.basesic.config.ResultResponse;
 import com.ssmbase.basesic.model.User;
 import com.ssmbase.basesic.service.UserService;
 import io.swagger.annotations.Api;
@@ -23,9 +24,9 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping(value = "/user",method = RequestMethod.POST)
-    @ApiOperation(value = "获取所有用户", notes = "获取所有用户")
-    public List<User> getUser(){
-        return userService.selectUsers();
+    @ApiOperation(value = "获取单个用户信息", notes = "根据User中Id获取用户信息")
+    public ResultResponse<User> selectUsersById(){
+        return ResultResponse.createBySuccess(userService.selectUsers());
     }
 
     @RequestMapping(value = "/insert",method = RequestMethod.POST)
