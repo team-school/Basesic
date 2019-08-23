@@ -8,6 +8,10 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * TODO 暂时停用
+ * @param <T>
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResultResponse<T> implements Serializable {
 

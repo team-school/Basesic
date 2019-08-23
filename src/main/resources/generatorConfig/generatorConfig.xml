@@ -106,7 +106,7 @@
         </javaClientGenerator>
 
 
-        <table tableName="User" domainObjectName="User"
+        <table tableName="Wx_Button_Menu" domainObjectName="WxMenu"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">

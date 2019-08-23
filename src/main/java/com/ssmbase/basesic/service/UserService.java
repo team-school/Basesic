@@ -1,7 +1,7 @@
 package com.ssmbase.basesic.service;
 
-import com.ssmbase.basesic.dao.UserMapper;
-import com.ssmbase.basesic.model.User;
+import com.ssmbase.basesic.dao.UserInfoMapper;
+import com.ssmbase.basesic.model.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,14 +9,11 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
     @Autowired
-    UserMapper userDao;
-    public User selectUsers(){
-        User list = userDao.selectByPrimaryKey(1);
+    UserInfoMapper userDao;
+    public UserInfo selectUsers(){
+        UserInfo list = userDao.selectByPrimaryKey(1);
         return list;
     }
 
-    public void insertUser(User user){
-      int a=  userDao.insert(user);
-    }
 
 }
