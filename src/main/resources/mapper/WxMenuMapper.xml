@@ -206,37 +206,37 @@
     from Wx_Button_Menu
    <where>
      <if test="id != null">
-       Id = #{id, jdbcType=INTEGER}
+       and Id = #{id, jdbcType=INTEGER}
      </if>
      <if test="buttonName != null">
-      Button_Name = #{buttonName,jdbcType=VARCHAR}
+       and Button_Name = #{buttonName,jdbcType=VARCHAR}
      </if>
      <if test="titleName != null">
-       Title_Name = #{titleName,jdbcType=VARCHAR}
+       and Title_Name = #{titleName,jdbcType=VARCHAR}
      </if>
      <if test="type != null">
-       Type = #{type,jdbcType=VARCHAR}
+       and Type = #{type,jdbcType=VARCHAR}
      </if>
      <if test="parentid != null">
-       ParentId = #{parentid,jdbcType=INTEGER}
+       and ParentId = #{parentid,jdbcType=INTEGER}
      </if>
      <if test="isEnable != null">
-       Is_Enable = #{isEnable,jdbcType=BIT}
+       and Is_Enable = #{isEnable,jdbcType=BIT}
      </if>
      <if test="createTime != null">
-       Create_Time = #{createTime,jdbcType=TIMESTAMP}
+       and Create_Time = #{createTime,jdbcType=TIMESTAMP}
      </if>
      <if test="createUserid != null">
-       Create_UserId = #{createUserid,jdbcType=INTEGER}
+       and Create_UserId = #{createUserid,jdbcType=INTEGER}
      </if>
      <if test="updateTime != null">
-       Update_Time = #{updateTime,jdbcType=TIMESTAMP}
+       and Update_Time = #{updateTime,jdbcType=TIMESTAMP}
      </if>
      <if test="updateUserid != null">
-       Update_UserId = #{updateUserid,jdbcType=INTEGER}
+       and Update_UserId = #{updateUserid,jdbcType=INTEGER}
      </if>
      <if test="orgid != null">
-       OrgId = #{orgid,jdbcType=INTEGER}
+       and OrgId = #{orgid,jdbcType=INTEGER}
      </if>
    </where>
   </select>
