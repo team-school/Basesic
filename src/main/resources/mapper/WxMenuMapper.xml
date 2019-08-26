@@ -213,7 +213,6 @@
      </if>
      <if test="titleName != null">
        Title_Name = #{titleName,jdbcType=VARCHAR}
-       Title_Name = #{titleName,jdbcType=VARCHAR}
      </if>
      <if test="type != null">
        Type = #{type,jdbcType=VARCHAR}

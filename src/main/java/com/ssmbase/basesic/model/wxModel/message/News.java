@@ -1,4 +1,4 @@
-package com.ssmbase.basesic.model;
+package com.ssmbase.basesic.model.wxModel.message;
 
 public class News {
 

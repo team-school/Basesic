@@ -1,6 +1,5 @@
-package com.ssmbase.basesic.model;
+package com.ssmbase.basesic.model.wxModel.message;
 
-import com.ssmbase.basesic.model.News;
 
 import java.util.List;
 

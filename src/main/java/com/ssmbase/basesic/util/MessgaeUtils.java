@@ -1,8 +1,8 @@
 package com.ssmbase.basesic.util;
 
 import com.ssmbase.basesic.dao.Messages;
-import com.ssmbase.basesic.model.News;
-import com.ssmbase.basesic.model.NewsMessage;
+import com.ssmbase.basesic.model.wxModel.message.News;
+import com.ssmbase.basesic.model.wxModel.message.NewsMessage;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.core.util.QuickWriter;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
